@@ -1,0 +1,8 @@
+[dependencies]
+actix-web = "4"
+sqlx = { version = "0.7", features = ["runtime-actix-native-tls", "sqlite"] }
+chacha20poly1305 = "0.10" // For encryption (alternative to AES)
+rand = "0.8" // For generating random keys/nonces
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+dotenv = "0.15" // For environment variables
